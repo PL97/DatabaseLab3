@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.sceneController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <TabPane id="tabs" fx:id="tabs_form" layoutX="0.0" layoutY="0.0" prefHeight="337.0" prefWidth="488.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab fx:id="repertory" text="库存">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="306.0" prefWidth="478.0">
+              <children>
+                <TextField fx:id="k_ISBN" layoutX="101.0" layoutY="30.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="k_lib" layoutX="101.0" layoutY="80.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="k_room" layoutX="101.0" layoutY="139.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="k_shelf" layoutX="101.0" layoutY="198.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="k_num" layoutX="101.0" layoutY="258.0" prefHeight="20.0" prefWidth="169.0" />
+                <CheckBox id="ISBN" fx:id="k_ISBNcheck" layoutX="26.0" layoutY="32.0" mnemonicParsing="false" text="ISBN" />
+                <CheckBox id="libcheck" fx:id="k_libcheck" layoutX="26.0" layoutY="82.0" mnemonicParsing="false" text="藏馆号" />
+                <CheckBox id="roomcheck" fx:id="k_roomcheck" layoutX="26.0" layoutY="141.0" mnemonicParsing="false" text="房间号" />
+                <CheckBox id="shelfcheck" fx:id="k_shelfcheck" layoutX="26.0" layoutY="198.0" mnemonicParsing="false" text="书架号" />
+                <CheckBox id="num" fx:id="k_numcheck" layoutX="26.0" layoutY="257.0" mnemonicParsing="false" text="数目" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="book" text="图书">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="600.0">
+              <children>
+                <TextField fx:id="t_ISBN" layoutX="104.0" layoutY="26.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="t_press" layoutX="104.0" layoutY="76.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="t_title" layoutX="104.0" layoutY="135.0" prefHeight="20.0" prefWidth="169.0" />
+                <CheckBox id="ISBN" fx:id="t_ISBNcheck" layoutX="29.0" layoutY="28.0" mnemonicParsing="false" text="ISBN" />
+                <CheckBox fx:id="t_presscheck" layoutX="29.0" layoutY="78.0" mnemonicParsing="false" text="出版社" />
+                <CheckBox fx:id="t_titlecheck" layoutX="29.0" layoutY="137.0" mnemonicParsing="false" text="书名" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="reader" text="读者">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="600.0">
+              <children>
+                <TextField fx:id="d_name" layoutX="100.0" layoutY="26.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="d_borrcard" layoutX="100.0" layoutY="76.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="b_sex" layoutX="100.0" layoutY="135.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="d_validdate_s" layoutX="100.0" layoutY="194.0" prefHeight="20.0" prefWidth="61.0" />
+                <CheckBox id="d_reader" fx:id="d_namecheck" layoutX="25.0" layoutY="28.0" mnemonicParsing="false" text="姓名" />
+                <CheckBox fx:id="d_borrcardcheck" layoutX="25.0" layoutY="78.0" mnemonicParsing="false" text="借书证号" />
+                <CheckBox fx:id="b_sexcheck" layoutX="25.0" layoutY="137.0" mnemonicParsing="false" text="性别" />
+                <CheckBox fx:id="d_validdatecheck" layoutX="25.0" layoutY="194.0" mnemonicParsing="false" text="有效日期" />
+                <TextField fx:id="d_validdate_e" layoutX="208.0" layoutY="194.0" prefHeight="20.0" prefWidth="61.0" />
+                <Text layoutX="172.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="至" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="room" text="房间">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="600.0">
+              <children>
+                <TextField fx:id="f_room" layoutX="104.0" layoutY="26.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="f_lib" layoutX="104.0" layoutY="76.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="f_type" layoutX="104.0" layoutY="135.0" prefHeight="20.0" prefWidth="169.0" />
+                <CheckBox fx:id="f_roomcheck" layoutX="29.0" layoutY="28.0" mnemonicParsing="false" text="房间号" />
+                <CheckBox fx:id="f_libcheck" layoutX="29.0" layoutY="78.0" mnemonicParsing="false" text="藏馆号" />
+                <CheckBox fx:id="f_typecheck" layoutX="29.0" layoutY="137.0" mnemonicParsing="false" text="房间类别" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="shelf" text="书架">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="600.0">
+              <children>
+                <TextField fx:id="s_shelf" layoutX="100.0" layoutY="28.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="s_room" layoutX="100.0" layoutY="78.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="s_lib" layoutX="100.0" layoutY="137.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="s_type" layoutX="100.0" layoutY="196.0" prefHeight="20.0" prefWidth="169.0" />
+                <CheckBox fx:id="s_shelfcheck" layoutX="25.0" layoutY="30.0" mnemonicParsing="false" text="书架号" />
+                <CheckBox fx:id="s_roomcheck" layoutX="25.0" layoutY="80.0" mnemonicParsing="false" text="房间号" />
+                <CheckBox fx:id="s_libcheck" layoutX="25.0" layoutY="139.0" mnemonicParsing="false" text="藏馆号" />
+                <CheckBox fx:id="s_typecheck" layoutX="25.0" layoutY="196.0" mnemonicParsing="false" text="类别" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="supplier" text="供应商">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="600.0">
+              <children>
+                <TextField fx:id="g_supplierID" layoutX="108.0" layoutY="34.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="g_name" layoutX="108.0" layoutY="84.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="g_phone" layoutX="108.0" layoutY="143.0" prefHeight="20.0" prefWidth="169.0" />
+                <CheckBox fx:id="g_supplierIDcheck" layoutX="21.0" layoutY="36.0" mnemonicParsing="false" text="供应商编号" />
+                <CheckBox id="g_name" fx:id="g_namecheck" layoutX="21.0" layoutY="86.0" mnemonicParsing="false" text="供应商名称" />
+                <CheckBox id="g_phone" fx:id="g_phonecheck" layoutX="21.0" layoutY="145.0" mnemonicParsing="false" text="联系方式" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="record" text="借阅记录">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="600.0">
+              <children>
+                <TextField fx:id="j_ISBN" layoutX="105.0" layoutY="25.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField id="j_borrCardcheck" fx:id="j_borrCard" layoutX="105.0" layoutY="75.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="j_borrDate" layoutX="105.0" layoutY="134.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="j_returnDate" layoutX="105.0" layoutY="193.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="j_num" layoutX="105.0" layoutY="253.0" prefHeight="20.0" prefWidth="169.0" />
+                <CheckBox fx:id="j_ISBNcheck" layoutX="30.0" layoutY="27.0" mnemonicParsing="false" text="ISBN" />
+                <CheckBox fx:id="j_borrCardcheck" layoutX="30.0" layoutY="77.0" mnemonicParsing="false" text="借书证号" />
+                <CheckBox fx:id="j_borrDatecheck" layoutX="30.0" layoutY="136.0" mnemonicParsing="false" text="借阅日期" />
+                <CheckBox fx:id="j_returnDatecheck" layoutX="30.0" layoutY="193.0" mnemonicParsing="false" text="还书如期" />
+                <CheckBox fx:id="j_numcheck" layoutX="30.0" layoutY="252.0" mnemonicParsing="false" text="借阅数量" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="operAccount" text="操作流水">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="600.0">
+              <children>
+                <TextField fx:id="c_ISBN" layoutX="107.0" layoutY="24.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="c_borrCard" layoutX="107.0" layoutY="74.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="c_workerID" layoutX="107.0" layoutY="133.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="c_operType" layoutX="107.0" layoutY="192.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="c_operDate" layoutX="107.0" layoutY="252.0" prefHeight="20.0" prefWidth="169.0" />
+                <CheckBox fx:id="c_ISBNcheck" layoutX="32.0" layoutY="26.0" mnemonicParsing="false" text="ISBN" />
+                <CheckBox fx:id="c_borrCardcheck" layoutX="32.0" layoutY="76.0" mnemonicParsing="false" text="借书证号" />
+                <CheckBox fx:id="c_workerIDcheck" layoutX="32.0" layoutY="135.0" mnemonicParsing="false" text="职工号" />
+                <CheckBox fx:id="c_operTypecheck" layoutX="32.0" layoutY="192.0" mnemonicParsing="false" text="操作类型" />
+                <CheckBox fx:id="c_operDatecheck" layoutX="32.0" layoutY="251.0" mnemonicParsing="false" text="操作日期" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="library" text="藏馆">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="600.0">
+              <children>
+                <TextField fx:id="c_lib" layoutX="109.0" layoutY="34.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="c_name" layoutX="109.0" layoutY="84.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="c_addr" layoutX="109.0" layoutY="143.0" prefHeight="20.0" prefWidth="169.0" />
+                <CheckBox fx:id="c_libcheck" layoutX="34.0" layoutY="36.0" mnemonicParsing="false" text="藏馆编号" />
+                <CheckBox id="c_name" fx:id="c_namecheck" layoutX="34.0" layoutY="86.0" mnemonicParsing="false" text="藏馆名称" />
+                <CheckBox fx:id="c_addrcheck" layoutX="34.0" layoutY="145.0" mnemonicParsing="false" text="藏馆地址" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="instockForm" text="图书入库单">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="600.0">
+              <children>
+                <TextField fx:id="tr_formID" layoutX="111.0" layoutY="36.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="tr_lib" layoutX="111.0" layoutY="86.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="tr_supplier" layoutX="111.0" layoutY="145.0" prefHeight="20.0" prefWidth="169.0" />
+                <CheckBox fx:id="tr_formIDcheck" layoutX="24.0" layoutY="38.0" mnemonicParsing="false" text="入库单号" />
+                <CheckBox fx:id="tr_libcheck" layoutX="24.0" layoutY="88.0" mnemonicParsing="false" text="藏馆编号" />
+                <CheckBox fx:id="tr_suppliercheck" layoutX="24.0" layoutY="147.0" mnemonicParsing="false" text="供应商编号" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="instockAccount" text="入库流水">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="600.0">
+              <children>
+                <TextField fx:id="rl_account" layoutX="114.0" layoutY="26.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="rl_libID" layoutX="114.0" layoutY="76.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="rl_ISBN" layoutX="114.0" layoutY="135.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="rl_booknum" layoutX="114.0" layoutY="194.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="rl_formID" layoutX="114.0" layoutY="254.0" prefHeight="20.0" prefWidth="169.0" />
+                <CheckBox fx:id="rl_accountcheck" layoutX="39.0" layoutY="28.0" mnemonicParsing="false" text="流水号" />
+                <CheckBox fx:id="rl_libIDcheck" layoutX="39.0" layoutY="78.0" mnemonicParsing="false" text="藏馆号" />
+                <CheckBox fx:id="rl_ISBNcheck" layoutX="39.0" layoutY="137.0" mnemonicParsing="false" text="ISBN" />
+                <CheckBox fx:id="rl_booknumcheck" layoutX="39.0" layoutY="196.0" mnemonicParsing="false" text="图书数目" />
+                <CheckBox fx:id="rl_formIDcheck" layoutX="39.0" layoutY="254.0" mnemonicParsing="false" text="入库单号" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="instockDetail" text="入库明细">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="600.0">
+              <children>
+                <TextField fx:id="rm_form" layoutX="114.0" layoutY="26.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="rm_ISBN" layoutX="114.0" layoutY="76.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="rm_num" layoutX="114.0" layoutY="135.0" prefHeight="20.0" prefWidth="169.0" />
+                <CheckBox fx:id="rm_formcheck" layoutX="27.0" layoutY="28.0" mnemonicParsing="false" text="入库单号" />
+                <CheckBox fx:id="rm_ISBNcheck" layoutX="27.0" layoutY="78.0" mnemonicParsing="false" text="ISBN" />
+                <CheckBox fx:id="rm_numcheck" layoutX="27.0" layoutY="137.0" mnemonicParsing="false" text="入库数目" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="librarian" text="图书管理员">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="306.0" prefWidth="380.0">
+              <children>
+                <TextField fx:id="t_workerID" layoutX="122.0" layoutY="34.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="t_lib" layoutX="122.0" layoutY="133.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField fx:id="t_room" layoutX="122.0" layoutY="192.0" prefHeight="20.0" prefWidth="169.0" />
+                <CheckBox fx:id="t_workerIDcheck" layoutX="35.0" layoutY="36.0" mnemonicParsing="false" text="职工号" />
+                <CheckBox fx:id="t_libcheck" layoutX="35.0" layoutY="135.0" mnemonicParsing="false" text="藏馆号" />
+                <CheckBox fx:id="t_roomcheck" layoutX="35.0" layoutY="194.0" mnemonicParsing="false" text="房间号" />
+                <TextField id="t_workerID" fx:id="t_workername" layoutX="122.0" layoutY="83.0" prefHeight="20.0" prefWidth="169.0" />
+                <CheckBox id="t_workerIDcheck" fx:id="t_workernamecheck" layoutX="35.0" layoutY="85.0" mnemonicParsing="false" text="姓名" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="Mutiform" onSelectionChanged="#changeMode" text="多表操作">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="306.0" prefWidth="380.0">
+              <children>
+                <TextField id="t_workerID" fx:id="f1_input1" layoutX="63.0" layoutY="45.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField id="t_lib" layoutX="63.0" layoutY="97.0" prefHeight="20.0" prefWidth="169.0" />
+                <TextField id="t_room" layoutX="63.0" layoutY="161.0" prefHeight="20.0" prefWidth="169.0" />
+                <CheckBox id="t_workerIDcheck" fx:id="f1select" layoutX="35.0" layoutY="22.0" mnemonicParsing="false" prefWidth="312.0" text="通过图书名查找图书以及对应场馆地址以及图书数目" />
+                <CheckBox id="t_libcheck" layoutX="35.0" layoutY="72.0" mnemonicParsing="false" text="藏馆号" />
+                <CheckBox id="t_roomcheck" layoutX="35.0" layoutY="137.0" mnemonicParsing="false" text="房间号" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+    <TabPane id="tabs" fx:id="tabs_submit" layoutX="488.0" layoutY="0.0" prefHeight="337.0" prefWidth="312.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="单表操作">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="276.0" prefWidth="286.0">
+              <children>
+                <Button id="add" fx:id="submitAdd" layoutX="47.0" layoutY="256.0" mnemonicParsing="false" onAction="#submitAdd" text="add" />
+                <Button fx:id="submitDelete" layoutX="118.0" layoutY="258.0" mnemonicParsing="false" onAction="#submitDelete" text="delete" />
+                <Button id="submitModify" fx:id="submitSelect" layoutX="196.0" layoutY="258.0" mnemonicParsing="false" onAction="#submitSelect" text="select" />
+                <TextArea fx:id="logging" layoutX="13.0" layoutY="5.0" prefHeight="238.0" prefWidth="284.0000999999975" wrapText="true" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="Mutifunc" onSelectionChanged="#changeMode" text="多表复合操作">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="600.0">
+              <children>
+                <TextArea id="logging" fx:id="logging2" layoutX="14.0" layoutY="14.0" prefHeight="238.0" prefWidth="284.0000999999975" wrapText="true" />
+                <Button id="add" fx:id="mutisubmit" layoutX="262.0" layoutY="264.0" mnemonicParsing="false" onAction="#mutisubmit" text="GO" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+    <TableView fx:id="table" layoutX="0.0" layoutY="337.0" prefHeight="363.0" prefWidth="800.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" onEditCommit="#submitModify" prefWidth="161.0" text="" fx:id="column1" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" onEditCommit="#submitModify" prefWidth="178.0" text="" fx:id="column2" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" onEditCommit="#submitModify" prefWidth="161.0" text="" fx:id="column3" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" onEditCommit="#submitModify" prefWidth="156.0" text="" fx:id="column4" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" onEditCommit="#submitModify" prefWidth="143.0" text="" fx:id="column5" />
+      </columns>
+    </TableView>
+  </children>
+</AnchorPane>
